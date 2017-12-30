@@ -1,0 +1,11 @@
+#!/usr/bin/env perl6
+
+use EventSource::Client;
+
+react {
+    whenever EventSource::Client.new(source => "http://127.0.0.1:7798/") -> $event {
+        say "> " ~ $event.data;
+    }
+}
+
+# vim: expandtab shiftwidth=4 ft=perl6
