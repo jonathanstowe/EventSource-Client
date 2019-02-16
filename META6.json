@@ -1,19 +1,21 @@
 {
   "name": "EventSource::Client",
+  "version": "0.0.1",
+  "api": "1.0",
+  "auth": "github:jonathanstowe",
   "source-url": "https://github.com/jonathanstowe/EventSource-Client.git",
   "support": {
     "email": "jns+gh@gellyfish.co.uk",
     "source": "https://github.com/jonathanstowe/EventSource-Client.git",
     "bugtracker": "https://github.com/jonathanstowe/EventSource-Client/issues"
   },
-  "perl": "6.c",
+  "perl": "6.*",
   "resources": [
     
   ],
   "build-depends": [
     
   ],
-  "auth": "github:jonathanstowe",
   "depends": [
 	"Cro::HTTP::Client"
   ],
@@ -27,7 +29,6 @@
   "provides": {
 	"EventSource::Client" : "lib/EventSource/Client.pm"
   },
-  "version": "0.0.1",
   "meta-version": "0",
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"

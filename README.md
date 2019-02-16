@@ -43,4 +43,4 @@ Please post any bugs, feature requests or patches to https://github.com/jonathan
 
 This is free software, please see the [LICENCE](LICENCE) for details.
 
-© Jonathan Stowe 2017, 2018
+© Jonathan Stowe 2017, 2018, 2019
