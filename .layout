@@ -1,0 +1,207 @@
+{
+  "children": [
+    {
+      "purpose": null,
+      "type": "directory",
+      "children": [
+        {
+          "name": "scala-server",
+          "children": [
+            {
+              "type": "file",
+              "name": "build.sbt"
+            },
+            {
+              "type": "directory",
+              "children": [
+                {
+                  "purpose": null,
+                  "children": [
+                    {
+                      "name": "resources",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "application-test.conf"
+                        }
+                      ],
+                      "type": "directory",
+                      "purpose": null
+                    },
+                    {
+                      "name": "scala",
+                      "children": [
+                        {
+                          "type": "directory",
+                          "children": [
+                            {
+                              "name": "example",
+                              "type": "directory",
+                              "children": [
+                                {
+                                  "type": "file",
+                                  "name": "UserRoutesSpec.scala"
+                                }
+                              ],
+                              "purpose": null
+                            }
+                          ],
+                          "name": "com",
+                          "purpose": null
+                        }
+                      ],
+                      "type": "directory",
+                      "purpose": null
+                    }
+                  ],
+                  "type": "directory",
+                  "name": "test"
+                },
+                {
+                  "purpose": null,
+                  "children": [
+                    {
+                      "purpose": null,
+                      "name": "resources",
+                      "children": [
+                        {
+                          "name": "application.conf",
+                          "type": "file"
+                        },
+                        {
+                          "name": "logback.xml",
+                          "type": "file"
+                        }
+                      ],
+                      "type": "directory"
+                    },
+                    {
+                      "purpose": null,
+                      "name": "scala",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "com",
+                          "children": [
+                            {
+                              "name": "example",
+                              "type": "directory",
+                              "children": [
+                                {
+                                  "type": "file",
+                                  "name": "EventRoutes.scala"
+                                },
+                                {
+                                  "name": "EventServer.scala",
+                                  "type": "file"
+                                }
+                              ],
+                              "purpose": null
+                            }
+                          ],
+                          "type": "directory",
+                          "purpose": null
+                        }
+                      ]
+                    }
+                  ],
+                  "type": "directory",
+                  "name": "main"
+                }
+              ],
+              "name": "src",
+              "purpose": null
+            }
+          ],
+          "type": "directory",
+          "purpose": null
+        },
+        {
+          "name": "node-server",
+          "children": [
+            {
+              "type": "file",
+              "name": "index.js"
+            },
+            {
+              "name": "package.json",
+              "type": "file"
+            }
+          ],
+          "type": "directory",
+          "purpose": null
+        },
+        {
+          "purpose": null,
+          "name": "raku-server",
+          "children": [
+            {
+              "type": "file",
+              "name": "tick-server"
+            }
+          ],
+          "type": "directory"
+        },
+        {
+          "type": "file",
+          "name": "synopsis"
+        }
+      ],
+      "name": "examples"
+    },
+    {
+      "purpose": null,
+      "type": "directory",
+      "children": [
+        {
+          "type": "file",
+          "name": "001-meta.t"
+        },
+        {
+          "name": "010-use.t",
+          "type": "file"
+        },
+        {
+          "name": "020-event.t",
+          "type": "file"
+        }
+      ],
+      "name": "t"
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    },
+    {
+      "name": "lib",
+      "children": [
+        {
+          "name": "EventSource",
+          "type": "directory",
+          "children": [
+            {
+              "name": "Client.pm",
+              "type": "file"
+            }
+          ],
+          "purpose": null
+        }
+      ],
+      "type": "directory",
+      "purpose": null
+    },
+    {
+      "name": "META6.json",
+      "type": "file"
+    },
+    {
+      "name": "Changes",
+      "type": "file"
+    },
+    {
+      "name": "LICENCE",
+      "type": "file"
+    }
+  ],
+  "type": "layout"
+}
