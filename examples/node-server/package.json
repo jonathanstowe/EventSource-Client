@@ -1,0 +1,15 @@
+{
+  "name": "eventserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.js"
+  },
+  "author": "",
+  "license": "Artitic-2.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ssestream": "^1.0.1"
+  }
+}
