@@ -10,26 +10,27 @@
     "bugtracker": "https://github.com/jonathanstowe/EventSource-Client/issues"
   },
   "perl": "6.*",
+  "raku": "6.*",
   "resources": [
-    
   ],
   "build-depends": [
     
   ],
   "depends": [
-	"Cro::HTTP::Client"
+	"Cro::HTTP"
   ],
   "tags": [
 	"async", "event", "web", "server-sent event"
   ],
   "license": "Artistic-2.0",
   "test-depends": [
-    
+	"EventSource::Server",
+    "Test::Util::ServerPort"
   ],
   "provides": {
 	"EventSource::Client" : "lib/EventSource/Client.pm"
   },
-  "meta-version": "0",
+  "meta-version": "1",
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
   ],
