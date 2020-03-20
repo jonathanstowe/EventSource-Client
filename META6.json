@@ -1,6 +1,6 @@
 {
   "name": "EventSource::Client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "api": "1.0",
   "auth": "github:jonathanstowe",
   "source-url": "https://github.com/jonathanstowe/EventSource-Client.git",
