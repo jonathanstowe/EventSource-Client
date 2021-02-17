@@ -59,4 +59,4 @@ class EventSource::Client {
     }
 }
 
-# vim: expandtab shiftwidth=4 ft=perl6
+# vim: expandtab shiftwidth=4 ft=raku

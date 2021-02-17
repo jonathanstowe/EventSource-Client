@@ -1,4 +1,4 @@
-#!/usr/bin/env perl6
+#!/usr/bin/env raku
 
 use Test;
 use EventSource::Client;
@@ -40,4 +40,4 @@ react {
 $tick.stop;
 
 done-testing();
-# vim: ft=perl6
+# vim: ft=raku

@@ -4,7 +4,7 @@ A Raku client for [Server-Sent Events](https://www.w3.org/TR/eventsource/)
 
 ## Synopsis
 
-```perl6
+```raku
 use EventSource::Client;
 
 react {
@@ -43,4 +43,4 @@ Please post any bugs, feature requests or patches at  [github](https://github.co
 
 This is free software, please see the [LICENCE](LICENCE) for details.
 
-© Jonathan Stowe 2020
+© Jonathan Stowe 2020-2021
