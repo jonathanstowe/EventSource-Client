@@ -2,6 +2,8 @@
 
 A Raku client for [Server-Sent Events](https://www.w3.org/TR/eventsource/)
 
+![Build Status](https://github.com/jonathanstowe/EventSource-Client/workflows/CI/badge.svg)
+
 ## Synopsis
 
 ```raku
