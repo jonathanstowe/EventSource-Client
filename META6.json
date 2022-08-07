@@ -1,38 +1,39 @@
 {
-  "name": "EventSource::Client",
-  "version": "0.0.3",
-  "api": "1.0",
-  "auth": "github:jonathanstowe",
-  "source-url": "https://github.com/jonathanstowe/EventSource-Client.git",
-  "support": {
-    "email": "jns+gh@gellyfish.co.uk",
-    "source": "https://github.com/jonathanstowe/EventSource-Client.git",
-    "bugtracker": "https://github.com/jonathanstowe/EventSource-Client/issues"
-  },
-  "perl": "6.*",
   "raku": "6.*",
-  "resources": [
-  ],
-  "build-depends": [
-    
-  ],
-  "depends": [
-	"Cro::HTTP"
-  ],
-  "tags": [
-	"async", "event", "web", "server-sent event"
-  ],
   "license": "Artistic-2.0",
+  "build-depends": [
+  ],
   "test-depends": [
-	"EventSource::Server",
+    "EventSource::Server",
     "Test::Util::ServerPort"
   ],
-  "provides": {
-	"EventSource::Client" : "lib/EventSource/Client.pm"
+  "version": "0.0.4",
+  "source-url": "https://github.com/jonathanstowe/EventSource-Client.git",
+  "support": {
+    "source": "https://github.com/jonathanstowe/EventSource-Client.git",
+    "email": "jns+gh@gellyfish.co.uk",
+    "bugtracker": "https://github.com/jonathanstowe/EventSource-Client/issues"
   },
+  "name": "EventSource::Client",
+  "resources": [
+  ],
+  "tags": [
+    "async",
+    "event",
+    "web",
+    "server-sent event"
+  ],
+  "depends": [
+    "Cro::HTTP"
+  ],
+  "provides": {
+    "EventSource::Client": "lib/EventSource/Client.pm"
+  },
+  "description": "A client for server sent events",
+  "api": "1.0",
   "meta-version": "1",
+  "auth": "zef:jonathanstowe",
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
-  ],
-  "description": "A client for server sent events"
+  ]
 }
