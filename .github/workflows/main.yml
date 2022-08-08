@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: jjmerelo/alpine-raku:gha-2021.10
+      image: jjmerelo/raku-test:latest
 
     steps:
     - uses: actions/checkout@v2
