@@ -20,7 +20,7 @@ jobs:
       run: raku -v
 
     - name: Install a newer zef
-      run:  zef install --force-install --/test https://github.com/ugexe/zef.git
+      run:  git clone https://github.com/ugexe/zef.git && cd zef && raku -I. bin/install --force-install --/test . 
 
     - name: Install dependencies
       run: zef install --deps-only --/test --test-depends .
