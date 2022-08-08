@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: jjmerelo/raku:latest
+      image: jjmerelo/raku:gha-2022.06
 
     steps:
     - uses: actions/checkout@v2
