@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: jjmerelo/raku:gha-2022.06
+      image: jjmerelo/alpine-raku:gha-2021.10
 
     steps:
     - uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
       run: raku -v
 
     - name: Install a newer zef
-      run:  git clone https://github.com/ugexe/zef.git && cd zef && raku -I. bin/install --force-install --/test . 
+      run:  zef install --force-install --/test https://github.com/ugexe/zef.git
 
     - name: Install dependencies
       run: zef install --deps-only --/test --test-depends .
