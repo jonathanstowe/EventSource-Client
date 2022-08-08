@@ -7,7 +7,7 @@
     "EventSource::Server",
     "Test::Util::ServerPort"
   ],
-  "version": "0.0.4",
+  "version": "0.0.5",
   "source-url": "https://github.com/jonathanstowe/EventSource-Client.git",
   "support": {
     "source": "https://github.com/jonathanstowe/EventSource-Client.git",
@@ -27,7 +27,7 @@
     "Cro::HTTP"
   ],
   "provides": {
-    "EventSource::Client": "lib/EventSource/Client.pm"
+    "EventSource::Client": "lib/EventSource/Client.rakumod"
   },
   "description": "A client for server sent events",
   "api": "1.0",
