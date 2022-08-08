@@ -19,6 +19,9 @@ jobs:
     - name: Raku version
       run: raku -v
 
+    - name: install an ssl
+      run: apk add libssl-dev
+
     - name: Install a newer zef
       run:  zef install --force-install --/test https://github.com/ugexe/zef.git
 
