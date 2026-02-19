@@ -20,7 +20,7 @@ jobs:
       run: raku -v
 
     - name: Install an SSL
-      run: apt-get -qq update && apt-get -qq install -y libssl1.1 libssl-dev openssl
+      run: apt-get -qq update && apt-get -qq install -y libssl-dev openssl
 
     - name: Install a newer zef
       run:  zef install --force-install --/test https://github.com/ugexe/zef.git
