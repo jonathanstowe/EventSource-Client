@@ -18,49 +18,6 @@
                   "purpose": null,
                   "children": [
                     {
-                      "name": "resources",
-                      "children": [
-                        {
-                          "type": "file",
-                          "name": "application-test.conf"
-                        }
-                      ],
-                      "type": "directory",
-                      "purpose": null
-                    },
-                    {
-                      "name": "scala",
-                      "children": [
-                        {
-                          "type": "directory",
-                          "children": [
-                            {
-                              "name": "example",
-                              "type": "directory",
-                              "children": [
-                                {
-                                  "type": "file",
-                                  "name": "UserRoutesSpec.scala"
-                                }
-                              ],
-                              "purpose": null
-                            }
-                          ],
-                          "name": "com",
-                          "purpose": null
-                        }
-                      ],
-                      "type": "directory",
-                      "purpose": null
-                    }
-                  ],
-                  "type": "directory",
-                  "name": "test"
-                },
-                {
-                  "purpose": null,
-                  "children": [
-                    {
                       "purpose": null,
                       "name": "resources",
                       "children": [
