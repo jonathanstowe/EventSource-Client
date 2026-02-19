@@ -1,5 +1,8 @@
+.bsp
+.idea
 .precomp
 node_modules
 package-lock.json
 examples/scala-server/target
 examples/scala-server/project
+*.gz

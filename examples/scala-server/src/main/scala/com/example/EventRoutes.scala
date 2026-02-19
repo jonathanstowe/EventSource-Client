@@ -1,21 +1,20 @@
 package com.example
 
-import akka.NotUsed
-import akka.stream.scaladsl.Source
 
-import akka.http.scaladsl.Http
-import akka.http.scaladsl.server.Route
-import akka.http.scaladsl.server.Directives._
-import akka.http.scaladsl.unmarshalling.Unmarshal
-import akka.http.scaladsl.model.sse.ServerSentEvent
-import scala.concurrent.duration._
+import org.apache.pekko
+import org.apache.pekko.NotUsed
+import org.apache.pekko.http.scaladsl.model.sse.ServerSentEvent
+import org.apache.pekko.http.scaladsl.server.Directives._
+import org.apache.pekko.http.scaladsl.server.Route
+import org.apache.pekko.stream.scaladsl.Source
 
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter.ISO_LOCAL_TIME
+import scala.concurrent.duration._
 
 object  EventRoutes {
   def route: Route = {
-    import akka.http.scaladsl.marshalling.sse.EventStreamMarshalling._
+    import pekko.http.scaladsl.marshalling.sse.EventStreamMarshalling._
 
     path("") {
       get {

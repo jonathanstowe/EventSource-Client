@@ -1,25 +1,32 @@
 package com.example
 
-import akka.actor.ActorSystem
-import akka.http.scaladsl.Http
-import akka.http.scaladsl.model._
-import akka.http.scaladsl.server.Directives._
-import akka.stream.ActorMaterializer
+
+import org.apache.pekko.actor.ActorSystem
+import org.apache.pekko.http.scaladsl.Http
+import org.apache.pekko.http.scaladsl.server.Route
+
+import scala.concurrent.{ExecutionContextExecutor, Future}
 import scala.io.StdIn
+import scala.util.{Failure, Success}
 
 object EventServer {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
 
-    implicit val system = ActorSystem("my-system")
-    implicit val materializer = ActorMaterializer()
+    implicit val system: ActorSystem = ActorSystem("my-system")
+    implicit val executionContext: ExecutionContextExecutor = system.dispatcher
 
-    implicit val executionContext = system.dispatcher
+    val route: Route = EventRoutes.route
 
-    val route = EventRoutes.route
+    val bindingFuture: Future[Http.ServerBinding] = Http().newServerAt("localhost", 7798).bind(route)
 
-    val bindingFuture = Http().bindAndHandle(route, "localhost", 7798)
-
-    println(s"Server online at http://localhost:7798/\nPress RETURN to stop...")
+    bindingFuture.onComplete {
+        case Success(binding) =>
+            val address = binding.localAddress
+            system.log.info("Server online at http://{}:{}/", address.getHostString, address.getPort)
+        case Failure(ex) =>
+            system.log.error("Failed to bind HTTP endpoint, terminating system", ex)
+            system.terminate()
+    }
     StdIn.readLine() 
     bindingFuture.flatMap(_.unbind()).onComplete(_ => system.terminate())
   }
